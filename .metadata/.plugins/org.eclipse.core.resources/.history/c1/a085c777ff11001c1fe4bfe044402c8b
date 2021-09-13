@@ -1,0 +1,22 @@
+package net.skhu.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import net.skhu.dto.Student;
+
+@Controller
+@RequestMapping("third")
+public class ThirdController {
+	Student student = new Student(id,3);
+	Student student = new Student(studentNumber,"201635007");
+	Student student = new Student(studentName,"김호진");
+	Student student = new Student(email,"kimhojin3714@naver.com");
+	@RequestMapping("test1")
+	public String test1(Model model) {
+		model.addAttribute("message" , "안녕하세요");
+	return "second/test1";
+	}
+	
+	
+}
